@@ -1,0 +1,33 @@
+<%-include('./partials/header.ejs')%>
+<body>
+    <div class="container">
+      <div class="card" id="formulario">
+        <div class="card-header">
+          <h3>Tarefa</h3>
+        </div>
+          <form  method="POST" action="/salvarlista"> 
+            <div class="card-body">
+            </label>Descrição</label>
+            <input type="text" class="form-control"  name="descricao">
+            <br>
+            <label>Status</label>
+            <select class="form" name="status">      
+              <option>Pendente</option >
+              <option>Andamento</option>
+              <option>Concluida</option>
+            </select>  
+            <label>Data</label>
+            <input type="date" name="calendario">
+            <br>
+            <br>
+            <label>Observações</label>
+            <textarea class="form-control"  rows="3" name="observacao" ></textarea>
+            <br>
+                <button class="btn btn-primary">Salvar</button>
+                <a class="btn btn-primary float-right " href="./menu" role="button">voltar</a>
+              </form>
+                         
+            </div>
+      </div>  
+</body>
+<%-include('./partials/footer.ejs')%>
